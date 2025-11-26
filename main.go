@@ -7,13 +7,9 @@ import (
 )
 
 func main() {
-
-	// ⚠️ Conflit volontaire : L'autre branche modifie cette ligne
 	log.Println("Serveur Go en démarrage...")
 
 	http.HandleFunc("/", server.HomeHandler)
-	http.HandleFunc("/book", server.BookHandler)
-	http.HandleFunc("/contact", server.ContactHandler)
 
 	log.Println("Serveur lancé sur http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
