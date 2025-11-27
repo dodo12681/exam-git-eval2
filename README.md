@@ -1,11 +1,8 @@
-# Campus Library — Examen Git
+# Mini Web Library – Go Server
 
-Ce repository contient plusieurs branches avec du code pré-écrit.
+Ce projet est un mini serveur web permettant d’afficher une liste de livres et une page dédiée par livre.
 
-🎯 Votre objectif : reconstruire le projet final en utilisant **exclusivement Git** :
-- fork
-- pull requests
-- merges
-- résolution de conflits
-- tags
-- historique propre
+## Lancer le serveur
+```bash
+go run main.go
+
